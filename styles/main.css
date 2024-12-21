@@ -1,0 +1,91 @@
+:root {
+  --prim: #bac1b8;
+  --sec: #a31e09;
+  --asst-1: #2b303a;
+  --asst-2: #0c7c59;
+  --asst-3: #58a4b0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.icons a {
+  color: #fff
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--sec);
+  width: 100%;
+  height: 80px;
+  border-bottom: var(--asst-2) solid 2px;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 68px;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--sec);
+  transition: all .5s ease-in;
+  z-index: 100;
+  overflow: hidden;
+  border-right: var(--asst-2) solid 2px;
+}
+
+.bars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  border: var(--sec) solid 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: .5rem 5rem;
+}
+
+.bars:hover,
+a:hover,
+.active {
+  background-color: #fff;
+  color: var(--sec);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  padding: 6rem 0;
+  gap: 1rem;
+  align-items: center;
+  list-style-type: none;
+}
+
+.icons {
+  display: flex;
+  width: 400px;
+  margin-left: auto;
+}
+
+.icons a {
+  font-size: .8rem;
+  font-weight: 600;
+  width: 50px;
+  height: 15px;
+}
