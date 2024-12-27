@@ -1,0 +1,20 @@
+:root {
+  --prim: #bac1b8;
+  --sec: #a31e09;
+  --asst-1: #2b303a;
+  --asst-2: #0c7c59;
+  --asst-3: #58a4b0;
+}
+
+@media screen and (min-width:720px) {
+  .bars {
+    display: none;
+  }
+
+  nav {
+    flex-direction: row;
+    grid-column: 2/3;
+    justify-content: space-evenly;
+  }
+
+}

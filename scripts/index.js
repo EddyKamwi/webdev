@@ -1,17 +1,15 @@
 const crossBar = document.querySelector(".bars")
-const menu = document.querySelector('.menu')
+const menu = document.querySelector('nav')
 const links = document.querySelectorAll('a')
 var clicked = true;
 crossBar.addEventListener("click", (event) => {
     if (clicked) {
-        event.target.parentElement.style.width = "300px"
         event.target.innerText = "⨉";
-        menu.style.display = "flex"
-        clicked=false
+        menu.style.height = "200px"
+        clicked = false
     } else {
-        event.target.parentElement.style.width = "68px";
         event.target.innerText = "≡";
-        menu.style.display = "none"
+        menu.style.height = "0px"
         clicked = true;
     }
 })
