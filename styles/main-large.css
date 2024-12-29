@@ -17,5 +17,7 @@
     justify-content: space-evenly;
     height: auto;
   }
+  .heroCard{
+    grid-column: 2/5;
 
 }

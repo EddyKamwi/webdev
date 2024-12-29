@@ -65,3 +65,34 @@ nav a:hover {
 .bars:hover {
   color: var(--sec)
 }
+.hero{
+  background:center/cover no-repeat url(../images/hero.jpg);
+  display: grid;
+  grid-template-columns:repeat(10, 10%);
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+  height:480px;
+}
+.heroImage{
+  background-size: cover;
+  grid-column: 1/11;
+  grid-row: 1/7;
+}
+.heroCard{
+grid-column: 2/9;
+grid-row: 5/6;
+padding:1rem;
+border:solid 1px;
+background-color: rgb(255, 255, 255,.8);
+}
+.heroCard h2{
+  text-transform: uppercase;
+}
+.heroCard button{
+  padding: .1rem 1rem;
+  margin-top: 1rem;
+  background-color: var(--asst-2);
+  border: none;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
